@@ -1,0 +1,10 @@
+.slide {
+    min-height: 100vh;
+    overflow: hidden;
+
+    &-title {
+        display: inline-block; /* fix margin top "overflow" */
+        width: 100%;
+        border-bottom: 0.07em solid rgba(200, 200, 200, .25);
+    }
+}

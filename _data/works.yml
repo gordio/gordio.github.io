@@ -1,0 +1,13 @@
+ - title: "Gordio Personal Page"
+   image: self
+   description: "This is current site. Created from scratch, and I still work on it."
+   link: "http://bitbucket.org/gordio/site"
+
+ - title: "Andy Fiord Fashion Agencies"
+   image: affa
+   description: "I'm one of Front End Developer's."
+
+ - title: "Gordio Personal Page on Django"
+   image: old_self
+   description: "My old site, using Django."
+   link: "http://github.com/gordio/site"

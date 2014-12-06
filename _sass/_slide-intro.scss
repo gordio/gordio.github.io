@@ -1,0 +1,73 @@
+/* Intro slide */
+.slide.intro {
+    z-index: 10;
+    text-align: center;
+    color: #FFF;
+    background: #524437 url('desktop.jpg') center center no-repeat;
+    background-size: cover;
+    text-shadow: 0 2px 2px #000;
+    background-attachment: fixed;
+
+    a {
+        color: #FFF;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+            text-decoration: none;
+        }
+    }
+
+    hgroup {
+        position: fixed;
+        top: 50%;
+        margin-top: -4em;
+        width: 100%;
+        height: 8em;
+        text-align: center;
+    }
+
+    .name {
+        margin: 0;
+        font: 3.25em/1.25em Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+        text-transform: uppercase;
+
+
+        a:hover {color: #FFF}
+        a.fn-twitter {color: #FFF}
+        a:hover .fn-twitter {color: $blue}
+        .fn-twitter:before {
+            font-size: 0.5em;
+            vertical-align: top;
+        }
+    }
+
+    .prof {
+        margin: 0;
+        font: 2.5em/1.25em Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+
+        mark {
+            color: $primary-color;
+            background-color: transparent;
+        }
+    }
+
+    .nickname {
+        visibility: hidden;
+    }
+}
+
+/* Only mobiles */
+@media only screen and (max-width: 40em) {
+    .slide.intro {
+        hgroup {
+            font-size: 0.75em !important;
+        }
+    }
+}
+
+@media only screen and (min-width: 90.063em) {
+    .slide.intro {
+        background-image: url('desktop@x2.jpg');
+    }
+}

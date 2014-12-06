@@ -1,0 +1,37 @@
+.pages-navigation {
+    z-index: 255;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    // padding: 1em;
+    text-align: justify;
+    overflow: hidden;
+
+    .hack {
+        color: transparent;
+        display: inline-block;
+        width: 30em;
+    }
+
+    a {
+        padding: 0.25em 0.5em;
+        color: #FFF;
+        font-weight: 800;
+        text-decoration: none;
+        text-shadow: 0 1px 0.125em #000;
+
+        -webkit-transition: color 0.25s linear;
+        transition: all 0.25s linear;
+
+        &:hover,
+        &:active {
+            color: $primary-color;
+            text-decoration: none;
+        }
+
+        &.active {
+            color: $primary-color;
+            text-shadow: 0 1px 0 rgba(200, 200, 200, 0.5);
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.slide.portfolio {
+    position: relative;
+    z-index: 30;
+    color: #555;
+    background: #FFF url('code.jpg') center center no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+}
+
+.work {
+    position: relative;
+    z-index: 1;
+    float: left;
+    margin: 0;
+    margin-bottom: 1em;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    color: #fff;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    &:after {
+        content: '';
+        float: left;
+        padding-top: 56.25%
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-radius: 2px
+    }
+
+    figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+
+        background: -webkit-radial-gradient(circle, transparent, rgba(0, 0, 0, 0.4));
+        background: -moz-radial-gradient(circle, transparent, rgba(0, 0, 0, 0.4));
+        background: -ms-radial-gradient(circle, transparent, rgba(0, 0, 0, 0.4));
+        background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.4));
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+        &:before,
+        &:after {
+            pointer-events: none;
+        }
+
+        p {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 1em;
+            color: #fff;
+            background: rgba(34, 34, 34, 0.9);
+
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+
+            .more {
+                float: right;
+            }
+        }
+    }
+
+    &:hover {
+        p {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+
+@media only screen and (min-width: 90.063em) {
+    .slide.portfolio {
+        background-image: url('code@x2.jpg');
+    }
+}

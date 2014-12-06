@@ -1,0 +1,25 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "colors";
+
+@import "normalize";
+@import "foundation";
+
+a {
+    &,
+    &:visited {
+        text-decoration: none;
+        color: $primary-color;
+    }
+    &:hover,
+    &:active {
+        text-decoration: underline;
+    }
+}
+
+@import "slides";
+@import "navigation";
+@import "slide-intro";
