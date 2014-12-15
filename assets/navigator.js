@@ -10,19 +10,31 @@ var Navigator = function(links_selector) {
     }
 
     var cur_active = -1;
+    function updActive(page) {
+        if (cur_active !== page) {
+            if (cur_active != -1 && links[cur_active].classList.contains('active')) {
+                links[cur_active].classList.remove("active");
+            }
+            cur_active = page;
+            links[cur_active].classList.add("active");
+        }
+    }
 
     function check_anchors(ev) {
         var y = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
         for (var page in pages) {
+            // FIXME: Ugly! Last page is contact form and it never moved to top
+            var cp = pages['#contact'],
+                cpw = document.querySelector('#contact .wrap'),
+                magic_padding = cpw.offsetHeight/2;
+            if (cp.offsetTop - cpw.offsetHeight - magic_padding <= y) {
+                updActive('#contact');
+                break;
+            }
+
+            // Normal checking
             if (y >= pages[page].offsetTop - window.innerHeight / 2) {
-                // change .active
-                if (cur_active !== page) {
-                    if (cur_active != -1 && links[cur_active].classList.contains('active')) {
-                        links[cur_active].classList.remove("active");
-                    }
-                    cur_active = page;
-                    links[cur_active].classList.add("active");
-                }
+                updActive(page);
                 break;
             }
         }
