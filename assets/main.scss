@@ -8,6 +8,10 @@
 @import "normalize";
 @import "foundation";
 
+html, body {
+    scrol-behavior: smooth;
+}
+
 a {
     &,
     &:visited {
