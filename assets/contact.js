@@ -1,8 +1,3 @@
-// Add EMail to link
-var em = document.getElementById('js-email');
-em.href = "mailto:admin@g";
-em.href += "ordio.pp.ua";
-
 // helper
 function serialize(form) {
     if (!form || form.nodeName !== "FORM") {
@@ -10,7 +5,6 @@ function serialize(form) {
     }
     var q = [];
     for (var i = form.elements.length ; --i >= 0; ) {
-        console.log(i);
         if (form.elements[i].name === "") {
             continue;
         }
@@ -29,15 +23,14 @@ function serialize(form) {
                 break;
         }
     }
-    console.log(q.join("&"));
     return q.join("&");
 }
 
 // Ajax form
-var form = document.querySelector(".js-contact-form");
-var submit = document.querySelector('.js-contact-form input[type~=submit]');
-var submit_text = submit.value;
-var status_el = document.querySelector('.js-contact-status');
+var form = document.querySelector(".js-contact-form"),
+    submit = document.querySelector('.js-contact-form input[type~=submit]'),
+    submit_text = submit.value,
+    status_el = document.querySelector('.js-contact-status');
 
 submit.addEventListener('click', function(ev) {
     ev.preventDefault();
