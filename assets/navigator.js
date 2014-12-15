@@ -12,11 +12,11 @@ var Navigator = function(links_selector) {
     var cur_active = -1;
     function updActive(page) {
         if (cur_active !== page) {
-            if (cur_active != -1 && links[cur_active].classList.contains('active')) {
-                links[cur_active].classList.remove("active");
+            if (cur_active != -1 && links[cur_active].classList.contains('is-active')) {
+                links[cur_active].classList.remove("is-active");
             }
             cur_active = page;
-            links[cur_active].classList.add("active");
+            links[cur_active].classList.add("is-active");
         }
     }
 
