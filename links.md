@@ -24,6 +24,7 @@ Front End
 - [CSS Preformance](http://csstriggers.com)
 - [CSS Layout Debugger](https://gist.github.com/addyosmani/fd3999ea7fce242756b1)
 - [Five Traits of Well-Managed JavaScript](http://www.ifwe.co/blog/posts/five-traits-of-well-managed-javascript/)
+- [Design Patterns: Ideas for you project](http://codepen.io/patterns/)
 
 Tools
 -----
