@@ -39,6 +39,11 @@ Tools
 - [Website Speed Test](http://tools.pingdom.com/fpt/)
 - [JS Nice](http://jsnice.org/)
 
+Cookies
+-------
+
+- [Simple Hint](http://catc.github.io/simple-hint/)
+
 
 Cookies
 =======
