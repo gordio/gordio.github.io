@@ -7,6 +7,7 @@ Deveopment
 ==========
 - [Semantic Versioning 2.0.0](http://semver.org/)
 - [MessagePack: It's like JSON. but fast and small.](http://msgpack.org/)
+- [Making Software Manual](https://www.gov.uk/service-manual/making-software)
 
 Tools
 -----
