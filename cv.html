@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume: Web Developer - Gordienko Oleg (Gordio)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
+
+	<script>
+	/* smooth-scroll.js */
+		function ssc_init(){if(!document.body)return;var e=document.body;var t=document.documentElement;var n=window.innerHeight;var r=e.scrollHeight;ssc_root=document.compatMode.indexOf("CSS")>=0?t:e;ssc_activeElement=e;ssc_initdone=true;if(top!=self){ssc_frame=true}else if(r>n&&(e.offsetHeight<=n||t.offsetHeight<=n)){ssc_root.style.height="auto";if(ssc_root.offsetHeight<=n){var i=document.createElement("div");i.style.clear="both";e.appendChild(i)}}if(!ssc_fixedback){e.style.backgroundAttachment="scroll";t.style.backgroundAttachment="scroll"}if(ssc_keyboardsupport){ssc_addEvent("keydown",ssc_keydown)}}function ssc_scrollArray(e,t,n,r){r||(r=1e3);ssc_directionCheck(t,n);ssc_que.push({x:t,y:n,lastX:t<0?.99:-.99,lastY:n<0?.99:-.99,start:+(new Date)});if(ssc_pending){return}var i=function(){var s=+(new Date);var o=0;var u=0;for(var a=0;a<ssc_que.length;a++){var f=ssc_que[a];var l=s-f.start;var c=l>=ssc_animtime;var h=c?1:l/ssc_animtime;if(ssc_pulseAlgorithm){h=ssc_pulse(h)}var p=f.x*h-f.lastX>>0;var d=f.y*h-f.lastY>>0;o+=p;u+=d;f.lastX+=p;f.lastY+=d;if(c){ssc_que.splice(a,1);a--}}if(t){var v=e.scrollLeft;e.scrollLeft+=o;if(o&&e.scrollLeft===v){t=0}}if(n){var m=e.scrollTop;e.scrollTop+=u;if(u&&e.scrollTop===m){n=0}}if(!t&&!n){ssc_que=[]}if(ssc_que.length){setTimeout(i,r/ssc_framerate+1)}else{ssc_pending=false}};setTimeout(i,0);ssc_pending=true}function ssc_wheel(e){if(!ssc_initdone){ssc_init()}var t=e.target;var n=ssc_overflowingAncestor(t);if(!n||e.defaultPrevented||ssc_isNodeName(ssc_activeElement,"embed")||ssc_isNodeName(t,"embed")&&/\.pdf/i.test(t.src)){return true}var r=e.wheelDeltaX||0;var i=e.wheelDeltaY||0;if(!r&&!i){i=e.wheelDelta||0}if(Math.abs(r)>1.2){r*=ssc_stepsize/120}if(Math.abs(i)>1.2){i*=ssc_stepsize/120}ssc_scrollArray(n,-r,-i);e.preventDefault()}function ssc_keydown(e){var t=e.target;var n=e.ctrlKey||e.altKey||e.metaKey;if(/input|textarea|embed/i.test(t.nodeName)||t.isContentEditable||e.defaultPrevented||n){return true}if(ssc_isNodeName(t,"button")&&e.keyCode===ssc_key.spacebar){return true}var r,i=0,s=0;var o=ssc_overflowingAncestor(ssc_activeElement);var u=o.clientHeight;if(o==document.body){u=window.innerHeight}switch(e.keyCode){case ssc_key.up:s=-ssc_arrowscroll;break;case ssc_key.down:s=ssc_arrowscroll;break;case ssc_key.spacebar:r=e.shiftKey?1:-1;s=-r*u*.9;break;case ssc_key.pageup:s=-u*.9;break;case ssc_key.pagedown:s=u*.9;break;case ssc_key.home:s=-o.scrollTop;break;case ssc_key.end:var a=o.scrollHeight-o.scrollTop-u;s=a>0?a+10:0;break;case ssc_key.left:i=-ssc_arrowscroll;break;case ssc_key.right:i=ssc_arrowscroll;break;default:return true}ssc_scrollArray(o,i,s);e.preventDefault()}function ssc_mousedown(e){ssc_activeElement=e.target}function ssc_setCache(e,t){for(var n=e.length;n--;)ssc_cache[ssc_uniqueID(e[n])]=t;return t}function ssc_overflowingAncestor(e){var t=[];var n=ssc_root.scrollHeight;do{var r=ssc_cache[ssc_uniqueID(e)];if(r){return ssc_setCache(t,r)}t.push(e);if(n===e.scrollHeight){if(!ssc_frame||ssc_root.clientHeight+10<n){return ssc_setCache(t,document.body)}}else if(e.clientHeight+10<e.scrollHeight){overflow=getComputedStyle(e,"").getPropertyValue("overflow");if(overflow==="scroll"||overflow==="auto"){return ssc_setCache(t,e)}}}while(e=e.parentNode)}function ssc_addEvent(e,t,n){window.addEventListener(e,t,n||false)}function ssc_removeEvent(e,t,n){window.removeEventListener(e,t,n||false)}function ssc_isNodeName(e,t){return e.nodeName.toLowerCase()===t.toLowerCase()}function ssc_directionCheck(e,t){e=e>0?1:-1;t=t>0?1:-1;if(ssc_direction.x!==e||ssc_direction.y!==t){ssc_direction.x=e;ssc_direction.y=t;ssc_que=[]}}function ssc_pulse_(e){var t,n,r;e=e*ssc_pulseScale;if(e<1){t=e-(1-Math.exp(-e))}else{n=Math.exp(-1);e-=1;r=1-Math.exp(-e);t=n+r*(1-n)}return t*ssc_pulseNormalize}function ssc_pulse(e){if(e>=1)return 1;if(e<=0)return 0;if(ssc_pulseNormalize==1){ssc_pulseNormalize/=ssc_pulse_(1)}return ssc_pulse_(e)}var ssc_framerate=150;var ssc_animtime=500;var ssc_stepsize=75;var ssc_pulseAlgorithm=true;var ssc_pulseScale=6;var ssc_pulseNormalize=1;var ssc_keyboardsupport=true;var ssc_arrowscroll=80;var ssc_frame=false;var ssc_direction={x:0,y:0};var ssc_initdone=false;var ssc_fixedback=true;var ssc_root=document.documentElement;var ssc_activeElement;var ssc_key={left:37,up:38,right:39,down:40,spacebar:32,pageup:33,pagedown:34,end:35,home:36};var ssc_que=[];var ssc_pending=false;var ssc_cache={};setInterval(function(){ssc_cache={}},10*1e3);var ssc_uniqueID=function(){var e=0;return function(t){return t.ssc_uniqueID||(t.ssc_uniqueID=e++)}}();var ischrome=/chrome/.test(navigator.userAgent.toLowerCase());if(ischrome){ssc_addEvent("mousedown",ssc_mousedown);ssc_addEvent("mousewheel",ssc_wheel);ssc_addEvent("load",ssc_init)}ssc_init()
+	</script>
+
+	<style>
+		/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+		article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block} audio,canvas,video{display:inline-block} audio:not([controls]){display:none;height:0} [hidden],template{display:none} script{display:none!important} html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%} a{background:transparent} a:focus{outline:thin dotted} a:active,a:hover{outline:0} h1{font-size:2em;margin:.67em 0} abbr[title]{border-bottom:1px dotted} b,strong{font-weight:700} dfn{font-style:italic} hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0} mark{background:#ff0;color:#000} code,kbd,pre,samp{font-family:monospace, serif;font-size:1em} pre{white-space:pre-wrap} q{quotes:\201C \201D \2018 \2019} small{font-size:80%} sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline} sup{top:-.5em} sub{bottom:-.25em} img{border:0} svg:not(:root){overflow:hidden} fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em} button,input,select,textarea{font-family:inherit;font-size:100%;margin:0} button,input{line-height:normal} button,select{text-transform:none} button,html input[type=button], input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer} button[disabled],html input[disabled]{cursor:default} input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0} input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box} input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none} textarea{overflow:auto;vertical-align:top} table{border-collapse:collapse;border-spacing:0} body,figure{margin:0} legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+
+		/* Foundation (Typography) v5.1.0 | MIT License | github.com/zurb/foundation */
+		meta.foundation-version{font-family:"/5.1.0/"}meta.foundation-mq-small{font-family:"/only screen and (max-width: 40em)/";width:0em}meta.foundation-mq-medium{font-family:"/only screen and (min-width:40.063em)/";width:40.063em}meta.foundation-mq-large{font-family:"/only screen and (min-width:64.063em)/";width:64.063em}meta.foundation-mq-xlarge{font-family:"/only screen and (min-width:90.063em)/";width:90.063em}meta.foundation-mq-xxlarge{font-family:"/only screen and (min-width:120.063em)/";width:120.063em}meta.foundation-data-attribute-namespace{font-family:false}html,body{height:100%}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}html,body{font-size:100%}body{background:#fff;color:#222;padding:0;margin:0;font-family:"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;font-weight:normal;font-style:normal;line-height:1;position:relative;cursor:default}a:hover{cursor:pointer}img,object,embed{max-width:100%;height:auto}object,embed{height:100%}img{-ms-interpolation-mode:bicubic}#map_canvas img,#map_canvas embed,#map_canvas object,.map_canvas img,.map_canvas embed,.map_canvas object{max-width:none !important}.left{float:left !important}.right{float:right !important}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.hide{display:none}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}img{display:inline-block;vertical-align:middle}textarea{height:auto;min-height:50px}select{width:100%}.text-left{text-align:left !important}.text-right{text-align:right !important}.text-center{text-align:center !important}.text-justify{text-align:justify !important}@media only screen and (max-width: 40em){.small-only-text-left{text-align:left !important}.small-only-text-right{text-align:right !important}.small-only-text-center{text-align:center !important}.small-only-text-justify{text-align:justify !important}}@media only screen{.small-text-left{text-align:left !important}.small-text-right{text-align:right !important}.small-text-center{text-align:center !important}.small-text-justify{text-align:justify !important}}@media only screen and (min-width: 40.063em) and (max-width: 64em){.medium-only-text-left{text-align:left !important}.medium-only-text-right{text-align:right !important}.medium-only-text-center{text-align:center !important}.medium-only-text-justify{text-align:justify !important}}@media only screen and (min-width: 40.063em){.medium-text-left{text-align:left !important}.medium-text-right{text-align:right !important}.medium-text-center{text-align:center !important}.medium-text-justify{text-align:justify !important}}@media only screen and (min-width: 64.063em) and (max-width: 90em){.large-only-text-left{text-align:left !important}.large-only-text-right{text-align:right !important}.large-only-text-center{text-align:center !important}.large-only-text-justify{text-align:justify !important}}@media only screen and (min-width: 64.063em){.large-text-left{text-align:left !important}.large-text-right{text-align:right !important}.large-text-center{text-align:center !important}.large-text-justify{text-align:justify !important}}@media only screen and (min-width: 90.063em) and (max-width: 120em){.xlarge-only-text-left{text-align:left !important}.xlarge-only-text-right{text-align:right !important}.xlarge-only-text-center{text-align:center !important}.xlarge-only-text-justify{text-align:justify !important}}@media only screen and (min-width: 90.063em){.xlarge-text-left{text-align:left !important}.xlarge-text-right{text-align:right !important}.xlarge-text-center{text-align:center !important}.xlarge-text-justify{text-align:justify !important}}@media only screen and (min-width: 120.063em) and (max-width: 99999999em){.xxlarge-only-text-left{text-align:left !important}.xxlarge-only-text-right{text-align:right !important}.xxlarge-only-text-center{text-align:center !important}.xxlarge-only-text-justify{text-align:justify !important}}@media only screen and (min-width: 120.063em){.xxlarge-text-left{text-align:left !important}.xxlarge-text-right{text-align:right !important}.xxlarge-text-center{text-align:center !important}.xxlarge-text-justify{text-align:justify !important}}div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}a{color:#2ba6cb;text-decoration:none;line-height:inherit}a:hover,a:focus{color:#258faf}a img{border:none}p{font-family:inherit;font-weight:normal;font-size:1rem;line-height:1.6;margin-bottom:1.25rem;text-rendering:optimizeLegibility}p.lead{font-size:1.21875rem;line-height:1.6}p aside{font-size:0.875rem;line-height:1.35;font-style:italic}h1,h2,h3,h4,h5,h6{font-family:"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;font-weight:normal;font-style:normal;color:#222;text-rendering:optimizeLegibility;margin-top:0.2rem;margin-bottom:0.5rem;line-height:1.4}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-size:60%;color:#6f6f6f;line-height:0}h1{font-size:2.125rem}h2{font-size:1.6875rem}h3{font-size:1.375rem}h4{font-size:1.125rem}h5{font-size:1.125rem}h6{font-size:1rem}.subheader{line-height:1.4;color:#6f6f6f;font-weight:normal;margin-top:0.2rem;margin-bottom:0.5rem}hr{border:solid #ddd;border-width:1px 0 0;clear:both;margin:1.25rem 0 1.1875rem;height:0}em,i{font-style:italic;line-height:inherit}strong,b{font-weight:bold;line-height:inherit}small{font-size:60%;line-height:inherit}code{font-family:Consolas,"Liberation Mono",Courier,monospace;font-weight:bold;color:#910b0e}ul,ol,dl{font-size:1rem;line-height:1.6;margin-bottom:1.25rem;list-style-position:outside;font-family:inherit}ul{margin-left:1.1rem}ul.no-bullet{margin-left:0}ul.no-bullet li ul,ul.no-bullet li ol{margin-left:1.25rem;margin-bottom:0;list-style:none}ul li ul,ul li ol{margin-left:1.25rem;margin-bottom:0}ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}ul.square{list-style-type:square;margin-left:1.1rem}ul.circle{list-style-type:circle;margin-left:1.1rem}ul.disc{list-style-type:disc;margin-left:1.1rem}ul.no-bullet{list-style:none}ol{margin-left:1.4rem}ol li ul,ol li ol{margin-left:1.25rem;margin-bottom:0}dl dt{margin-bottom:0.3rem;font-weight:bold}dl dd{margin-bottom:0.75rem}abbr,acronym{text-transform:uppercase;font-size:90%;color:#222;border-bottom:1px dotted #ddd;cursor:help}abbr{text-transform:none}blockquote{margin:0 0 1.25rem;padding:0.5625rem 1.25rem 0 1.1875rem;border-left:1px solid #ddd}blockquote cite{display:block;font-size:0.8125rem;color:#555}blockquote cite:before{content:"\2014 \0020"}blockquote cite a,blockquote cite a:visited{color:#555}blockquote,blockquote p{line-height:1.6;color:#6f6f6f}.vcard{display:inline-block;margin:0 0 1.25rem 0;border:1px solid #ddd;padding:0.625rem 0.75rem}.vcard li{margin:0;display:block}.vcard .fn{font-weight:bold;font-size:0.9375rem}.vevent .summary{font-weight:bold}.vevent abbr{cursor:default;text-decoration:none;font-weight:bold;border:none;padding:0 0.0625rem}@media only screen and (min-width: 40.063em){h1,h2,h3,h4,h5,h6{line-height:1.4}h1{font-size:2.75rem}h2{font-size:2.3125rem}h3{font-size:1.6875rem}h4{font-size:1.4375rem}}.print-only{display:none !important}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}.hide-on-print{display:none !important}.print-only{display:block !important}.hide-for-print{display:none !important}.show-for-print{display:inherit !important}}
+    </style>
+
+    <style>
+		/* Custom v 2014-02-28 | MIT License | Oleg Gordienko */
+		body {color: #444; background: #E2E2E2;}
+
+		a:link, a:visited {text-decoration: none}
+		a:hover, a:focus, a:active {text-decoration: underline}
+
+		ul {margin-left: 1.5rem}
+
+		#content {
+			margin: 1rem auto;
+			padding: 0 2rem;
+			max-width: 70rem;
+			width: 80%;
+			background: #FFF;
+			border: 1px solid rgba(0, 0, 0, 0.5);
+			border-radius: 0.125rem;
+			box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
+		}
+		#content:before,
+		#content:after {
+			content: '';
+			display: block;
+		}
+		#content:before {
+			margin-bottom: 2rem;
+		}
+		#content:after {
+			margin-top: 2rem;
+		}
+
+		header {text-align: center;}
+		header h1, header h3 {margin: 0; padding: 0;}
+		header h1 {font-size: 2rem; text-transform: uppercase;}
+		header h3 {font-size: 1.5rem;}
+
+		header .contacts {font-size: 92%;}
+
+		.cv-block {
+			width: 100%;
+			margin: 2rem auto;
+			/* max-width: 62.5em; */
+			*zoom: 1;
+		}
+		.cv-block:before,
+		.cv-block:after {
+			content: " ";
+			display: table;
+		}
+		.cv-block:after {
+			clear: both;
+		}
+
+		.cvb-title {
+			margin: 0 0 0.5rem;
+			padding: 0;
+			font-size: 1.5rem;
+			border-bottom: 2px dashed #AAA;
+		}
+
+		.cvb-sub_title {
+			margin: 0;
+			padding: 0;
+		}
+
+		.cvb-section {
+			padding-bottom: 1em;
+			position: relative;
+			float: left;
+		}
+		.cvb-section:nth-child(even) {
+			clear: left;
+		}
+		.cvb-section:last-child {
+			padding-bottom: 0;
+		}
+
+		.cvb-section p,
+		.cvb-section ul {
+			margin-bottom: 0;
+		}
+
+		/* Blocks */
+		.cvb-certifications dl dt {
+			margin: 0;
+		}
+
+		.cvb-certifications dl dt time {
+			float: right;
+			font-weight: normal;
+		}
+
+		/* Not mobiles */
+		@media only screen and (min-width: 40.063em) {
+			#content {
+				min-width: 55rem;
+			}
+			.cvb-section {
+				width: 50%;
+			}
+			.cvb-section._full {
+				width: 100%;
+			}
+			.cvb-section:nth-child(even) {
+				clear: left;
+				padding-right: 1em;
+			}
+		}
+
+		@media only screen and (max-width: 40.063em) {
+			.cvb-section,
+			.cvb-section._full {
+				width: 100%;
+			}
+		}
+
+		@media only screen and (max-width: 60.63em) {
+			#content {
+				width: 100%;
+				min-width: 100%;
+				margin: 0;
+				padding: 0 1rem;
+				border: 0;
+				box-shadow: 0;
+				box-sizing: border-box;
+			}
+			#content:before {
+				margin-bottom: 1rem;
+			}
+			#content:after {
+				margin-top: 1rem;
+			}
+		}
+
+
+		/* Printers */
+		.u-print {display: none;}
+		.u-noprint {display: block;}
+		@media print {
+			#content {
+				width: 100%;
+				margin: 0;
+				padding: 0 2rem;
+				border: 0;
+				border-color: transparent;
+				box-shadow: 0;
+				box-sizing: border-box;
+			}
+			a, a:hover {text-decoration: none}
+			a:after {content:" (" attr(href) ")"}
+			.u-print {display: block}
+			.u-noprint {display: none}
+		}
+    </style>
+</head>
+<body>
+	<!-- This is interesting div. I find that Safari scroll work smoothed when on page exist ("renderable") element with position: fixed.
+	Maybe it's connected with high CPU load, but moresmoothed :D -->
+	<div style="position: fixed; padding: 1px; background: #DDD;"></div>
+
+    <article id="content">
+        <header>
+            <h1>Oleg Gordienko</h1>
+            <h3>Web Developer</h3>
+            <span class="contacts">
+                <span class="u-print">
+                    me@gordio.pp.ua or +38 (097) 693-49-76 or Skype: viliker and http://github.com/gordio
+                </span>
+            	<span class="u-noprint">
+                    <a href="mailto:me@gordio.pp.ua">me@gordio.pp.ua</a> or <a href="tel:+380976934976">+38 (097) 693-49-76</a> or <a href="callto:viliker">Skype: viliker</a> and <a href="http://github.com/gordio">GitHub</a>
+                </span>
+            </span>
+        </header>
+
+
+        <section id="objective" class="cv-block">
+            <h1 class="cvb-title">Objective</h1>
+            <section class="cvb-section _full">
+                <p>Find a company that will allow me to fully utilise my experience, knowledge and creativity to improve its products and make the world a better place.</p>
+            </section>
+        </section>
+
+
+        <section id="skills" class="cv-block">
+            <h1 class="cvb-title">Skills</h1>
+            <section class="cvb-section">
+                <h4 class="cvb-sub_title">Front End</h4>
+                <ul>
+                    <li>HTML5, CSS3</li>
+                    <li>Responsive, Adaptive</li>
+                    <li>Grid systems</li>
+                    <li>Graceful degradation</li>
+                    <li>Foundation, Bootstrap, other grid systems</li>
+                    <li>WebKit Inspector (Safari, Chrome)</li>
+                </ul>
+            </section>
+
+            <section class="cvb-section">
+                <h4 class="cvb-sub_title">Back End</h4>
+                <ul>
+                    <li>Django, Flask, web2py</li>
+                    <li>Ajax, REST</li>
+                    <li>Fabric, Waff, Makefile</li>
+                    <li>PostgreSQL, MySQL, Sqlite</li>
+                    <li>Apache, nginx, lighttpd</li>
+                    <li>uwsgi, mod_python</li>
+                    <li>Git, Mercurial</li>
+                </ul>
+            </section>
+
+            <section class="cvb-section _full">
+                <h4 class="cvb-sub_title">More:</h4>
+                <ul>
+                    <li>Ubuntu, Fedora, Arch, Gentoo, LFS, *NIX, OS X (+Hackintosh)</li>
+                    <li>C, Python, Shell Scripting, JavaScript</li>
+                    <li>OpenMap, Leaflet, jQuery, Chromium Extensions</li>
+                    <li>XML, JSON, YAML, SQL, CSV</li>
+                    <li>VIM, Sublime Text 3, Pixelmator, Xcode</li>
+                    <li>Selenium IDE, jMeter</li>
+                    <li>Inno Setup, ResHacker, Hex Editor, regedit, etc</li>
+                </ul>
+            </section>
+        </section>
+
+
+        <section id="experience" class="cv-block">
+            <h1 class="cvb-title">Experience</h1>
+            <section class="cvb-section">
+                <h4 class="cvb-sub_title">Tmux-sb</h4>
+                <a href="https://github.com/gordio/tmux-sb">on Github</a>
+                <p>The status bar addon for Tmux for creation a fancy status bar of system resources loading. Creating this program I follow KISS ideology.</p>
+                <ul>
+                    <li>C</li>
+                    <li>*NIX Sockets</li>
+                    <li>Daemonize</li>
+                    <li>Makefile</li>
+                </ul>
+            </section>
+
+            <section class="cvb-section">
+                <h4 class="cvb-sub_title">TimeZero Shell</h4>
+                <a href="https://github.com/gordio/timezero-shell">on Github</a>
+                <p>GTK+-2.0 based Linux client for Online Game. Used the WebKit for communication with flash and json-c configs.</p>
+                <ul>
+                    <li>C</li>
+                    <li>json-c</li>
+                    <li>GTK+-2.0</li>
+                    <li>WebKit-gtk</li>
+                    <li>
+                        <del>Waff</del>
+                    </li>
+                    <li>Makefile</li>
+                </ul>
+            </section>
+
+            <section class="cvb-section">
+                <h4 class="cvb-sub_title">Show-or-Open</h4>
+                <a href="https://github.com/gordio/show-or-open">on Github</a>
+                <p>Execute command or switch to opened window. This script I'm using with OpenBox.</p>
+                <ul>
+                    <li>Shell Scripting</li>
+                    <li>X11 tools</li>
+                </ul>
+            </section>
+
+            <section class="cvb-section">
+                <h4 class="cvb-sub_title">ToggleBool</h4>
+                <a href="https://github.com/gordio/ToggleBool">on Github</a>
+                <p>Simple Sublime Text Plugin for toggle boolean words.</p>
+            </section>
+        </section>
+
+
+        <section id="certifications" class="cv-block cvb-certifications">
+            <h1 class="cvb-title">Certifications</h1>
+            <section class="cvb-section _full">
+                <dl>
+                    <dt>
+                        <time>2014-07-11</time><a href="http://www.intuit.ru/verifydiplomas/100796408">Introduction to HTML</a> - INTUIT</dt>
+                    <dl>The basic constructs of the language, layout techniques and communication with other development tools web-pages.</dl>
+
+                    <dt>
+                        <time>2014-07-11</time><a href="http://www.intuit.ru/verifydiplomas/100796414">HTML 4.1 Specification</a> - INTUIT</dt>
+                    <dl>The course is built on the specification that defines HTML 4.01 HyperText Markup Language (HTML).</dl>
+
+                    <dt>
+                        <time>2014-07-11</time><a href="http://www.intuit.ru/verifydiplomas/100796421">CSS2 Specification</a> - INTUIT</dt>
+                    <dl>The course is built on the specification that defines the language Cascading Style Sheets CSS2.</dl>
+                </dl>
+            </section>
+        </section>
+
+
+        <section id="employment" class="cv-block">
+            <h1 class="cvb-title">Employment</h1>
+            <section class="cvb-section">
+                <h4 class="cvb-sub_title">Freelancer <small>in</small> <a href="http://fixber.com/forum/profile/gordio"><span>Fixber</span></a></h4>
+                <p>It is a platform of services for software testing.</p>
+                <ul>
+                    <li>Manual WEB testing</li>
+                </ul>
+            </section>
+
+            <section class="cvb-section">
+                <h4 class="cvb-sub_title">Secondary Admin <small>in</small> <span>HLink ISP</span></h4>
+                <p>WiFi and Ethernet Internet Service Provider.</p>
+                <ul>
+                    <li>WiFi AP/Bridge's administrator (500+ clients)</li>
+                    <li>Simple Infrastructure Monitoring</li>
+                    <li>Resolving the problrems with clients (hardware or/and software problrems)</li>
+                </ul>
+            </section>
+
+            <section class="cvb-section">
+                <h4 class="cvb-sub_title">Web Developer <small>in</small> <span>Freelance</span></h4>
+                <p>Design and development the web projects with involving the such languages and technologies.</p>
+                <ul>
+                    <li>HTML/CSS, HTML5/CSS3</li>
+                    <li>JavaScript, jQuery</li>
+                    <li>Wordpress, Mod-X, Django</li>
+                </ul>
+            </section>
+
+            <section class="cvb-section">
+                <h4 class="cvb-sub_title">Service Engineer <small>in</small> <span>KORD Store</span></h4>
+                <p>Configuration and maintenance support specialist, technical consultant.</p>
+                <ul>
+                    <li>Configure and maintain Computers and Notebooks</li>
+                    <li>Maintain PC/Printer/Devices</li>
+                    <li>Refill toner based and liquid printer cartridges</li>
+                    <li>Fix PC/Printers/Devices</li>
+                    <li>Support clients</li>
+                </ul>
+            </section>
+        </section>
+
+
+        <section id="education" class="cv-block">
+            <h1 class="cvb-title">Education</h1>
+            <section class="cvb-section _full">
+                <ul>
+                    <!--
+                    <li>2014 - 2014 - Coursera: </li>
+                    <li>2014 - 2014 — <a href="https://class.coursera.org/historyofrock1-003">History of Rock, Part One by John Covach - University of Rochester</a></li>
+                    <li>2014 - 2014 — <a href="https://class.coursera.org/guitar-004">Introduction to Guitar - Berklee College of Music</a></li>
+                    -
+                    <li>Основы PostgreSQL (Ричард Стоунз, Нейл Меттью)</li>
+                    <li>Python. Подробный справочник, 4-е издание (Дэвид Бизли)</li>
+                    <li>Интерфейс. Новые направления в проектировании компьютерных систем (Джеф Раскин)</li>
+                    -->
+                    <li><time>2014</time> — <a href="https://www.khanacademy.org/profile/GordioUA/">(J4F Profile) Intro to JS: Drawing &amp; Animation</a> - Khan Academy</li>
+                    <li><time>2014</time> — <a href="https://itunes.apple.com/us/course/id733644550">Developing iOS 7 Apps for iPhone and iPad</a> - Stanford</li>
+                    <li><time>2014</time> — <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/">Introduction to Electrical Engineering and Computer Science I</a> - MIT OpenCourse</li>
+                    <li><time>2013</time> — <a href="http://www.portnov.com/software-qa-testing-training-courses/QA-Testing-training-classes-online">Portnov Computer School</a> - QA Online Course</li>
+                    <li><time>2012</time> — <a href="http://www.ibm.com/developerworks/ru/views/opensource/libraryview.jsp">Some sections from IBM DeveloperWorks</a>
+                    </li>
+                    <!-- FIXME: вспомнить или удалить
+                    2012 — Tuts+: Javascript, ember.js
+                    2011 — Lynda.com: iPhone, JavsScript, еще что-то :(
+                    -->
+                    <li><time>2011</time> — Google's Python Class</li>
+                    <li><time>2011</time> — Intuit: Python, C</li>
+                    <li><time>2010</time> — Intuit: CSS, C</li>
+                    <li><time>2010</time> — Intuit: HTML, CSS</li>
+                    <li><time>2008</time> — Programming C course for Windows and *NIX</li>
+                    <li><time>2006</time> — Krivoy Rog High School № 48</li>
+                </ul>
+            </section>
+        </section>
+    </article>
+
+	<!-- fix: bottom margin truncate -->
+    <div style="height: 1px; overflow: hidden">&nbsp;</div>
+</body>
+
+</html>
