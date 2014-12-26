@@ -23,17 +23,16 @@ layout: null
     <!--[if lte IE 8]>
     <script>document.body.innerHTML = '<h1 style="text-align:center">Please update you browser</h1>'</script>
     <![endif]-->
-    <nav class="pages-navigation">
-        <div class="row">
-            <div class="medium-8 small-12 columns">
-            </div>
-            <div class="pn-list medium-4 small-12 columns">
-                <a href="#intro">Intro</a>
-                <a href="#works">Works</a>
-                <a href="#contact">Contact</a>
-            </div>
+
+<div class="pages-navigation">
+    <div class="row">
+        <div class="medium-8 small-12 columns">
         </div>
-    </nav>
+        <div class="medium-4 small-12 columns">
+            {% include navigation.html %}
+        </div>
+    </div>
+</div>
 
     <header id="intro" class="slide intro">
         <div class="h-content">
