@@ -1,0 +1,211 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "colors";
+
+@import "normalize";
+@import "codehl";
+
+
+// Page config
+$page-padding: 1.75em;
+$page-width: 44em;
+
+// Typography config
+$global-fonts: Georgia, Palatino, Times, "Times New Roman", serif;
+$title-font: Futura, Futura-Medium, "Futura Medium", "URW Gothic L", "Avant Garde", sans-serif;
+
+
+body {
+    color: #333;
+    background: #ABC;
+    font: normal 1.25em/1.35em $global-fonts;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.75em;
+    margin-bottom: 0.375em;
+    font: 1.5em/1.35em $title-font;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+a {
+    text-decoration: none;
+    & {
+        color: $blue;
+    }
+    &:visited {
+        color: $magenta;
+    }
+    &:hover,
+    &:active {
+        color: $red;
+        text-decoration: underline;
+    }
+}
+
+
+.content-wrap {
+    margin: 0 auto;
+    width: 90%;
+    max-width: $page-width;
+}
+
+
+.page {
+    margin: 0.35em;
+    padding: 0 $page-padding;
+    color: #444;
+    background: #FFF;
+
+    border: 1px solid $brown;
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.2);
+
+    // Page vertical padding. Combined with other elements.
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+    }
+    &:after {
+        margin-top: $page-padding;
+    }
+    &:before {
+        margin-bottom: $page-padding;
+    }
+}
+
+.page-list time {
+    font-family: monospace;
+}
+
+.page-nav {
+    display: table;
+    padding: 0 $page-padding;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.35em;
+
+    a {
+        display: table-cell;
+        color: #777;
+
+        &:hover {
+            color: #000;
+        }
+    }
+    a:last-child {
+        text-align: right;
+    }
+    a:first-child {
+        text-align: left;
+    }
+}
+
+.page-title {
+    margin: 0;
+    margin-bottom: 0.75em;
+    padding: 0;
+    color: #333;
+    text-decoration: none;
+    text-shadow: 0 .06em 0 rgba(0, 0, 0, 0.125);
+}
+
+
+.page {
+    margin-bottom: 1em;
+
+    p {
+        margin: 0.75em 0;
+        text-indent: 1.5em;
+    }
+
+    .page-title + p {text-indent: 0}
+
+    code {
+        padding: 0.1em 0.2em;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        border-radius: 3px;
+    }
+
+    pre {
+        margin: 0.75em $page-padding * -1;
+        padding: 0 $page-padding;
+        font: 1em/1.25em monospace, monospace;
+        line-height: 1.25em;
+        background: #F3F3F3;
+
+        code {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            border-radius: none;
+        }
+    }
+
+    blockquote {
+        margin: 0.75em 0;
+        padding: 0 0.75em;
+        border-left: 0.25em solid $brown;
+
+        p {text-indent: 0}
+    }
+
+    img {
+        margin: 0.75em auto;
+        max-width: 100%;
+    }
+}
+
+.page-comments {
+    padding: 0 $page-padding;
+    padding-bottom: 0;
+}
+
+
+// For mobile devices
+@media only screen and (max-width: 40em) {
+    body {font-size: 1em;}
+
+    .content-wrap {
+        margin: 1em;
+        width: auto;
+        max-width: $page-width;
+    }
+
+    .page-nav {
+        display: table;
+        padding: 0 $page-padding/2;
+    }
+
+    .page {
+        padding: 0 $page-padding/2;
+        &:after {
+            margin-top: $page-padding/2;
+        }
+        &:before {
+            margin-bottom: $page-padding/2;
+        }
+
+        pre {
+            margin: 0.75em $page-padding/2 * -1;
+            padding: 0 $page-padding/2;
+        }
+    }
+
+    .page-comments {
+        padding: 0 $page-padding/2;
+    }
+}

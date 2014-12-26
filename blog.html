@@ -1,0 +1,13 @@
+---
+permalink: /blog/
+---
+
+<section class="page-list">
+    <h1 class="page-title">Articles</h1>
+    {% for post in site.posts %}
+    <article>
+        <h2><a href="{{ post.url | prepend: site.baseurl }}"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time> - {{ post.title }}</a></h2>
+        <section class="post-disclaimer">{{ post.excerpt }}</section>
+    </article>
+    {% endfor %}
+</section>

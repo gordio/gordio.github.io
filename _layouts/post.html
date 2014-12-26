@@ -7,12 +7,19 @@
 </head>
 <body>
     <div class="content-wrap">
+
         <nav class="page-nav">
-            <a href="/">« Back to Site</a>
+            <a href="/blog/">« Back to Articles List</a>
         </nav>
 
         <section class="page">
             {{ content }}
+        </section>
+
+        <section class="page-comments">
+            <div id="disqus_thread"></div>
+            <script src="/assets/disqus.init.js"></script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
         </section>
     </div>
 
