@@ -3,17 +3,19 @@
     position: fixed;
     width: 100%;
     top: 0;
-    padding-top: 1em;
-    text-align: justify;
+    padding: 1em 0;
     overflow: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
-    .hack {
-        color: transparent;
-        display: inline-block;
-        width: 30em;
-    }
+.pn-list {
+    display: table;
 
     a {
+        display: table-cell;
+        text-align: center;
         padding: 0.25em 0.5em;
         color: #FFF;
         font-weight: 800;
@@ -33,5 +35,11 @@
             color: $primary-color;
             text-shadow: 0 1px 0 rgba(200, 200, 200, 0.5);
         }
+    }
+    a:first-child {
+        text-align: left;
+    }
+    a:last-child {
+        text-align: right;
     }
 }
