@@ -57,6 +57,11 @@ Demo
 - [Hover ideas](http://ianlunn.github.io/Hover/)
 
 
+Cheat Sheets
+-----
+ - [Shopify](http://cheat.markdunkley.com)
+
+
 <!-- Show favicons -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
