@@ -12,6 +12,7 @@ Tools
 -----
 - [Trello: Agile Cards Managment](https://trello.com/)
 - [Cheetyr](http://www.cheetyr.com/)
+- [Material Design Color Palette Generator](http://www.materialpalette.com/)
 
 
 Front End
