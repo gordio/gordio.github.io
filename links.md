@@ -1,5 +1,6 @@
 ---
 title: Links
+permalink: /links/
 ---
 
 Deveopment
