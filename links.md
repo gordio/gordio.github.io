@@ -29,6 +29,7 @@ Front End
 - [Five Traits of Well-Managed JavaScript](http://www.ifwe.co/blog/posts/five-traits-of-well-managed-javascript/)
 - [Design Patterns: Ideas for you project](http://codepen.io/patterns/)
 - [SASS Guidelines](http://sass-guidelin.es/)
+- [YOU MIGHT NOT NEED JQUERY](http://youmightnotneedjquery.com/)
 
 Tools
 -----
