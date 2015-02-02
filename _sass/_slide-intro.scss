@@ -30,7 +30,7 @@
     .name {
         margin: 0;
         font: 3.25em/1.25em Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
-        text-transform: uppercase;
+        // text-transform: uppercase;
 
         a:hover {color: #FFF}
         a.fn-twitter {color: #FFF}
@@ -43,7 +43,8 @@
 
     .prof {
         margin: 0;
-        font: 2.5em/1.25em Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+        font: 2.25em/1.25em Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+        font-weight: lighter;
 
         mark {
             color: $primary-color;
@@ -60,6 +61,7 @@
         bottom: 1em;
         right: 1em;
         width: 100%;
+        font-weight: lighter;
 
         blockquote {
             margin: 0;
