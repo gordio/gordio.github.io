@@ -5,6 +5,8 @@
     &-title {
         display: inline-block; /* fix margin top "overflow" */
         width: 100%;
+        text-transform: uppercase;
+        font-weight: lighter;
         color: #222;
         border-bottom: 0.07em solid rgba(200, 200, 200, .25);
         text-shadow: 0 1px 1px #FFF;
