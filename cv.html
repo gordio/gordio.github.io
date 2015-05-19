@@ -73,21 +73,28 @@
 		}
 
 		.cvb-title {
-			margin: 0 0 0.5rem;
+			margin: 0 0 1rem;
 			padding: 0;
-			font-size: 1.5rem;
+			font-size: 1.75rem;
 			border-bottom: 2px dashed #AAA;
 		}
 
 		.cvb-sub_title {
 			margin: 0;
 			padding: 0;
+			font-size: 1.25rem;
 		}
 
 		.cvb-section {
 			padding-bottom: 1em;
 			position: relative;
 			float: left;
+		}
+
+		.cbv-section > .cbv-title + a {
+		    position: absolute;
+		    top: 0.5rem;
+		    right: 1.5rem;
 		}
 		.cvb-section:nth-child(even) {
 			clear: left;
@@ -176,7 +183,7 @@
 </head>
 <body>
 	<!-- This is interesting div. I find that Safari scroll work smoothed when on page exist ("renderable") element with position: fixed.
-	Maybe it's connected with high CPU load, but moresmoothed :D -->
+	Maybe it's connected with high CPU load, but moooresmoothed :D -->
 	<div style="position: fixed; padding: 1px; background: #DDD;"></div>
 
     <article id="content">
@@ -212,6 +219,7 @@
                     <li>Grid systems</li>
                     <li>Graceful degradation</li>
                     <li>Foundation, Bootstrap, other grid systems</li>
+                    <li>SASS, LESS</li>
                     <li>WebKit Inspector (Safari, Chrome)</li>
                 </ul>
             </section>
@@ -219,10 +227,9 @@
             <section class="cvb-section">
                 <h4 class="cvb-sub_title">Back End</h4>
                 <ul>
-                    <li>Django, Flask, web2py</li>
+                    <li>Django, Flask</li>
                     <li>Ajax, REST</li>
                     <li>Fabric, Waff, Makefile</li>
-                    <li>PostgreSQL, MySQL, Sqlite</li>
                     <li>Apache, nginx, lighttpd</li>
                     <li>uwsgi, mod_python</li>
                     <li>Git, Mercurial</li>
