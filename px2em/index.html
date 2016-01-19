@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Convert PX to EM (Online CSS Converter)</title>
+	<link rel="stylesheet" href="px2em.css">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+	<label for="id_autoCopy"><input id="id_autoCopy" type="checkbox" checked>Auto copy to Clipboard <a href="https://en.wikipedia.org/wiki/Clipboard_(computing)" target="_black"><sup>wiki</sup></a></label>
+
+	<label for="id_baseSize">Font base size:</label>
+	<input id="id_baseSize" type="number" min="6" max="128" value="16">
+
+	<button id="id_convert">Convert PX to EM</button>
+
+	<label for="id_source">Source: <small class="color-gray">(Convert ALL finded px to em)</small></label>
+	<textarea style="font-monospace" id="id_source" autofocus></textarea>
+
+	<label for="id_destination">Result:</label>
+	<textarea style="font-monospace" id="id_destination"></textarea>
+
+	<script src="px2em.js"></script>
+</body>
+</html>
