@@ -6,15 +6,21 @@
     <link rel="stylesheet" href="/assets/blog.css">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
-<body>
+<body class="blog-page">
     <div class="content-wrap">
         <nav class="page-nav">
             <a href="/">« Back to Site</a>
         </nav>
 
-        <section class="page">
-            {{ content }}
-        </section>
+        <div class="page">
+            {% for post in site.posts %}
+                <article>
+                    <h2><a href="{{ post.url }}">{{ post.title }} <small>({{ post.date | date_to_string }})</small></a></h2>
+                    {{ post.excerpt | strip_html }}
+                </article>
+            {% endfor %}
+            </ul>
+        </div>
     </div>
 
     <script src="/assets/highlight.pack.js"></script>

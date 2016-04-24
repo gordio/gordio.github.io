@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ post.excerpt | strip_html }}">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Oleg Gordienko">
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="stylesheet" href="/assets/blog.css">
 </head>
 <body>
@@ -13,6 +16,7 @@
         </nav>
 
         <section class="page">
+            <h1>{{ page.title }}</h1>
             {{ content }}
         </section>
 

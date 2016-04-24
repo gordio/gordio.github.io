@@ -17,11 +17,14 @@ $page-width: 44em;
 $global-fonts: Georgia, Palatino, Times, "Times New Roman", serif;
 $title-font: Futura, Futura-Medium, "Futura Medium", "URW Gothic L", "Avant Garde", sans-serif;
 
+html, body {
+    min-height: 100%;
+}
 
 body {
     color: #333;
     background: #ABC;
-    font: normal 1.25em/1.35em $global-fonts;
+    font: normal 1.20em/1.5em $global-fonts;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,6 +55,10 @@ a {
     }
 }
 
+body {
+    background-image: linear-gradient(to bottom, #345 0%, #345 120px, #ABC 121px, #ABC 100%);
+}
+
 
 .content-wrap {
     margin: 0 auto;
@@ -63,8 +70,8 @@ a {
 .page {
     margin: 0.35em;
     padding: 0 $page-padding;
-    color: #444;
-    background: #FFF;
+    color: #555;
+    background: #FEFEFE;
 
     border: 1px solid $brown;
     border-radius: 0.25em;
@@ -96,11 +103,11 @@ a {
     margin: 0.35em;
 
     a {
-        display: table-cell;
-        color: #777;
+        // display: table-cell;
+        color: #AAA;
 
         &:hover {
-            color: #000;
+            color: #FFF;
         }
     }
     a:last-child {
