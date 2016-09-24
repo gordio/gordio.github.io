@@ -8,9 +8,10 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.pn-list {
+.contacts-nav {
     display: table;
     width: 100%;
 
@@ -21,20 +22,16 @@
         color: #FFF;
         font-weight: 800;
         text-decoration: none;
-        text-shadow: 0 1px 0.125em #000;
 
         -webkit-transition: color 0.25s linear;
         transition: all 0.25s linear;
+        text-shadow: 0 1px 0.125em rgba(0, 0, 0, 0.2);
 
         &:hover,
-        &:is-active {
+        &:active {
             color: $primary-color;
             text-decoration: none;
-        }
-
-        &.is-active {
-            color: $primary-color;
-            text-shadow: 0 1px 0 rgba(200, 200, 200, 0.5);
+            text-shadow: 0 1px 0.125em #000;
         }
     }
     a:first-child {

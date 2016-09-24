@@ -12,30 +12,15 @@ layout: null
     <!-- Design -->
     <link rel="stylesheet" href="assets/main.css">
     <!-- I know. https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/ResourcePriorities/Overview.html#attr-lazyload -->
-    <link rel="stylesheet" href="assets/main2.css" lazyload>
     <link rel="stylesheet" href="assets/font-icons.css" lazyload>
     <link rel="stylesheet" href="assets/allura-regular.css">
-
-    <!--[if (IE 9)]>
-    <script src="//cdn.jsdelivr.net/classlist/2014.01.31/classList.min.js"></script>
-    <![endif]-->
 </head>
 <body class="vcard" itemscope itemtype="http://schema.org/Person">
     <!--[if lte IE 8]>
     <script>document.body.innerHTML = '<h1 style="text-align:center">Please update you browser</h1>'</script>
     <![endif]-->
 
-    <div class="pages-navigation">
-        <div class="row">
-            <div class="medium-8 small-12 columns">
-            </div>
-            <div class="medium-4 small-12 columns">
-                {% include navigation.html %}
-            </div>
-        </div>
-    </div>
-
-    <header id="intro" class="slide intro">
+    <section id="intro" class="slide intro">
         <div class="h-content">
             <span class="nickname" itemprop="nickname">Gordio</span>
             <h1 class="name fn" itemprop="name">
@@ -46,68 +31,9 @@ layout: null
             </h4>
         </div>
         <div class="quote">
-            <div class="row">
-                <div class="medium-8 small-12 columns">
-                </div>
-                <div class="medium-4 small-12 columns">
-                    <blockquote>Simplex sigillum veri</blockquote>
-                </div>
-            </div>
+            <blockquote>Simplex sigillum veri</blockquote>
         </div>
-    </header>
-
-    <section id="works" class="slide portfolio">
-        <section class="row">
-            <div class="medium-12 small-12 columns">
-                <h2 class="slide-title">What I Do</h2>
-            </div>
-            {% for work in site.data.works %}
-            <div class="medium-4 small-12 columns">
-                <figure class="work">
-                    <img src="/images/works/{{ work.image }}.jpg" alt="Screenshot: {{ work.title }}"
-                    srcset="/images/works/{{ work.image }}.jpg 640w, /images/works/{{ work.image }}@x2.jpg 1280w">
-                    <figcaption>
-                        <p>{{ work.description }}{% if work.link %}<a class="more" href="{{ work.link }}">View »</a>{% endif %}</p>
-                    </figcaption>
-                </figure>
-            </div>
-            {% endfor %}
-        </section>
     </section>
-
-    <footer id="contact" class="slide contact">
-        <div class="wrap">
-            <div class="row">
-                <div class="medium-12 small-12 columns">
-                    <h2 class="slide-title">Write message</h2>
-                </div>
-
-                <div class="medium-8 small-12 columns">
-                    <div class="js-contact-status status_message"></div>
-                    <form class="js-contact-form contact-form" action="/contact.php" method="POST">
-                        <input name="name" type="text" placeholder="Name" pattern="\w+ \w+.*" required>
-                        <input name="email" type="email" placeholder="Email" required>
-                        <textarea name="message" cols="30" rows="5" placeholder="Message" required></textarea>
-                        <div class="buttons">
-                            <input type="submit" value="Send message">
-                        </div>
-                    </form>
-                </div>
-                <div class="medium-4 small-12 columns">
-                    <ul class="contacts">
-                        <li><a href="http://twitter.com/gordioua" class="icon-twitter">Twitter</a></li>
-                        <li><a href="https://facebook.com/gordioua" class="icon-facebook">Facebook</a></li>
-                        <li><a href="https://plus.google.com/u/0/108016109141914573964/posts" class="icon-googleplus">+Google</a></li>
-                        <li><a href="http://ua.linkedin.com/in/gordio/" class="icon-linkedin">LinkedIn</a></li>
-                        <li><a href="mailto:work@gordio.pp.ua" class="icon-mail">Email</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/navigator.js"></script>
-    <script src="assets/pages.js" async></script>
 
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter11936827 = new Ya.Metrika({ id:11936827, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/11936827" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>
