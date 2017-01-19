@@ -1,0 +1,27 @@
+{
+	"folders":
+	[
+		{
+			"name": "Jekyll Web Site",
+			"folder_exclude_patterns": [".site", ".sass-cache"],
+			"file_exclude_patterns": ["CNAME", "Gemfile.lock"],
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"translate_tabs_to_spaces": false,
+	    "tab_size": 4
+	},
+	"build_systems":
+	[
+	    {
+	        "name": "Jekyll – Build",
+	        "shell_cmd": "bundler exec jekyll build -q"
+	    },
+	    {
+	        "name": "Jekyll – Run Server",
+	        "shell_cmd": "bundler exec jekyll s"
+	    },
+	]
+}
