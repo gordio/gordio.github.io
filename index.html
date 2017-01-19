@@ -27,13 +27,33 @@ layout: null
                 <a href="http://twitter.com/gordioua">Oleg Gordienko<i class="icon-twitter2 fn-twitter"></i></a>
             </h1>
             <h4 class="prof role" itemprop="title">
-                Front End <mark>Developer</mark>
+                Yet Another <mark>Developer</mark>
             </h4>
         </div>
         <div class="quote">
             <blockquote>Simplex sigillum veri</blockquote>
         </div>
     </section>
+
+    <!-- Disable before new design is ready
+    <section id="works" class="slide portfolio">
+        <section class="row">
+            <div class="medium-12 small-12 columns">
+                <h2 class="slide-title">What I Do</h2>
+            </div>
+            {% for work in site.data.works %}
+            <div class="medium-4 small-12 columns">
+                <figure class="work">
+                    <img src="{{ work.image }}" alt="Screenshot: {{ work.title }}">
+                    <figcaption>
+                        <p>{{ work.description }}{% if work.link %}<a class="more" href="{{ work.link }}">View »</a>{% endif %}</p>
+                    </figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+        </section>
+    </section>
+    -->
 
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter11936827 = new Ya.Metrika({ id:11936827, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/11936827" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>

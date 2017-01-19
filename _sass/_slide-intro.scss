@@ -1,6 +1,7 @@
 /* Intro slide */
 .slide.intro {
     z-index: 10;
+    position: relative;
     text-align: center;
     color: #FFF;
     background: #524437 url('desktop.jpg') center center no-repeat;

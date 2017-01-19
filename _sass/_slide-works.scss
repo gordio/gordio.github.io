@@ -1,6 +1,6 @@
 .slide.portfolio {
     position: relative;
-    z-index: 30;
+    z-index: 300;
     color: #555;
     background: #FFF url('code.jpg') center center no-repeat;
     background-size: cover;
@@ -18,6 +18,7 @@
     border: 1px solid #ddd;
     overflow: hidden;
     color: #fff;
+    background: #FFF;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

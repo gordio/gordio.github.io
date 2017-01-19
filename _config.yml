@@ -1,7 +1,9 @@
-title: Oleg Gordienko – Front End Developer
+title: Oleg Gordienko – Yet Another Developer
 
 markdown: kramdown
 kramdown:
+    # smart_quotes: ["rdquo", "rsquo", "ldquo", "rdquo"]
+    smart_quotes:  ["apos", "apos", "quot", "quot"]
     input: GFM
 
 defaults:
@@ -20,3 +22,8 @@ defaults:
 destination: .site
 sass:
     style: :compressed
+exclude:
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - Guardfile

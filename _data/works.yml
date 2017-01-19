@@ -1,13 +1,29 @@
- - title: "Gordio Personal Page"
-   image: self
+ - title: "Personal Page"
+   image: http://i.imgur.com/1L2E9fT.jpg
    description: "This is current site. Created from scratch, and I still work on it."
    link: "http://github.com/gordio/gordio.github.io"
 
+ - title: "PVX Web Application"
+   image: http://i.imgur.com/PRfZwWb.jpg
+   description: "PVX Web Application"
+
  - title: "Andy Fiord Fashion Agencies"
-   image: affa
+   image: http://i.imgur.com/HFX9n7D.jpg
    description: "I'm one of Front End Developer's."
 
- - title: "Gordio Personal Page on Django"
-   image: old_self
+ - title: "Django based Site"
+   image: http://i.imgur.com/9qi93Hy.jpg
    description: "My old site, using Django."
    link: "https://github.com/gordio/gordio-site-django"
+
+ - title: "PVX Web Site"
+   image: http://i.imgur.com/4LhaMNY.jpg
+   description: "PVX Web Site"
+
+ - title: "Company Landing Page"
+   image: http://i.imgur.com/Bv0BAt6.jpg
+   description: "Develop site from scratch"
+
+ - title: "4Game static site"
+   image: http://i.imgur.com/sivWejc.jpg
+   description: "Work on all parts excluded design"

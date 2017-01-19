@@ -17,39 +17,10 @@
             <a href="/blog/">« Back to Articles List</a>
         </nav>
 
-        <article>
-            <div class="page">
-                <header>
-                    <h1 class="article-title">{{ page.title }}</h1>
-                    {% if page.author %}
-                    <p class="article-author">By {{ page.author }}</p>
-                    {% endif %}
-                    <time class="article-time" pubdate datetime="{{ page.date }}">{{ page.date | date: '%B %d, %Y' }}</time>
-                </header>
-
-                <section class="article-content">
-                    <div class="highlighter-rouge">
-<pre><code>def main(argv):
-    p = Perceptron(5)
-    print("Before train:")
-    print(p.weights)
-    # p.train(5, 2)
-    # print(p.weights)
-    return 0
-
-if __name__ == '__main__':
-    sys.exit(main(sys.argv))</code></pre>
-                    </div>
-
-                    {{ content }}
-                </section>
-            </div>
-
-            <footer class="page-comments">
-                <div id="disqus_thread"></div>
-                <script src="/assets/disqus.init.js"></script>
-                <noscript>Please enable JavaScript to view the comments.</noscript>
-            </footer>
+        <article class="page">
+            <section>
+                {{ content }}
+            </section>
         </article>
     </div>
 

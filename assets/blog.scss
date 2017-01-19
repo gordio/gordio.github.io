@@ -3,42 +3,61 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@import "colors";
+@import "vars";
 
 @import "normalize";
 @import "codehl";
 
-
 // Page config
-$page-padding: 1.75em;
-$page-width: 44em;
+$page-padding: 1.75rem;
+$page-spacing: 0.75rem;
+$page-width: 49em;
+// Mobile
+$page-padding-mobile: $page-padding / 2;
+
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Serif:400,700|Roboto:400,500|Roboto+Mono:400,500&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic|Roboto+Mono:400');
 
 // Typography config
-$global-fonts: Georgia, Palatino, Times, "Times New Roman", serif;
-$title-font: Futura, Futura-Medium, "Futura Medium", "URW Gothic L", "Avant Garde", sans-serif;
+// $fonts-global: Georgia, Palatino, Times, "Times New Roman", serif;
+// $fonts-global: "PT Serif", Georgia, "Times New Roman", serif;
+// $fonts-global: 'Open Sans', sans-serif;
+$fonts-global: 'Roboto', sans-serif;
+$fonts-monospace: 'Roboto Mono', Consolas, Monaco, 'Andale Mono', monospace;
+$font-title: Futura, Futura-Medium, "Futura Medium", "URW Gothic L", "Avant Garde", sans-serif;
+
+
 
 html, body {
     min-height: 100%;
 }
 
 body {
+    font: normal 1.1em/1.5em $fonts-global;
     color: #333;
-    background: #ABC;
-    font: normal 1.20em/1.5em $global-fonts;
+    background: #EEE;
+}
+
+hr {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid $color-gray;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 0.75em;
+    margin-top: $page-spacing;
     margin-bottom: 0.375em;
-    font: 1.5em/1.35em $title-font;
+    font: 1.5em/1.35em $font-title;
 }
 
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h4 { font-size: 1em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
+h3 { font-size: 1.37em; }
+h4 { font-size: 1.17em; }
+h5 { font-size: 1em; }
+h6 { font-size: .83em; }
 
 a {
     text-decoration: none;
@@ -55,39 +74,79 @@ a {
     }
 }
 
-body {
-    background-image: linear-gradient(to bottom, #345 0%, #345 120px, #ABC 121px, #ABC 100%);
+kbd {
+    padding: 0.125em 0.25em;
+    background: #FAFAFA;
+    border: 1px solid $color-gray;
+    border-radius: 3px;
 }
+
+ul {
+    padding-left: 1.8em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid $color-gray;
+
+    th, td {
+        padding: $page-padding-mobile/4 $page-padding-mobile/2;
+    }
+
+    th {
+        border-bottom: 1px solid $color-gray;
+        border-left: 1px solid $color-gray;
+    }
+    th:first {
+        border-left: none;
+    }
+
+    td {
+        border-right: 1px dashed $color-gray;
+    }
+
+    tr:nth-child(even) {
+        background: $color-gray-light;
+    }
+}
+
+
 
 
 .content-wrap {
     margin: 0 auto;
-    width: 90%;
+    width: 92%;
     max-width: $page-width;
 }
 
 
-.page {
-    margin: 0.35em;
-    padding: 0 $page-padding;
-    color: #555;
-    background: #FEFEFE;
 
-    border: 1px solid $brown;
-    border-radius: 0.25em;
-    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.2);
+.article {
+    &-title {
+        margin: 0;
+        // margin-bottom: $page-spacing;
+        padding: 0;
+        color: #333;
+        text-decoration: none;
+        text-shadow: 0 .06em 0 rgba(0, 0, 0, 0.125);
+        font: 2em/1.35em $font-title;
+        p {text-indent: 0}
+    }
 
-    // Page vertical padding. Combined with other elements.
-    &:before,
-    &:after {
-        content: '';
-        display: block;
+    &-author {
+        margin: 0 !important;
+        padding: 0 !important;
     }
-    &:after {
-        margin-top: $page-padding;
+
+    &-content {
+        margin-top: $page-spacing;
     }
-    &:before {
-        margin-bottom: $page-padding;
+
+    &-time {
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 
@@ -118,40 +177,57 @@ body {
     }
 }
 
-.page-title {
-    margin: 0;
-    margin-bottom: 0.75em;
-    padding: 0;
-    color: #333;
-    text-decoration: none;
-    text-shadow: 0 .06em 0 rgba(0, 0, 0, 0.125);
-}
-
-
 .page {
+    margin: 0.35em;
     margin-bottom: 1em;
 
-    p {
-        margin: 0.75em 0;
-        text-indent: 1.5em;
+    padding: 0 $page-padding;
+    color: $font-color;
+    background: #FEFEFE;
+
+    border: 1px solid $color-gray;
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.25em $color-gray;
+
+    // Page vertical padding. Combined with other elements.
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+    }
+    &:after {
+        margin-top: $page-padding;
+    }
+    &:before {
+        margin-bottom: $page-padding;
     }
 
-    .page-title + p {text-indent: 0}
+    p {
+        margin: $page-spacing 0;
+        // text-indent: 1.5em;
+    }
+
+    .highlighter-rogue, pre, code {
+        margin: 0;
+        padding: 0;
+    }
+
 
     code {
         padding: 0.1em 0.2em;
         margin: 0;
-        background-color: rgba(0, 0, 0, 0.04);
+        font: 1em/1.25em $fonts-monospace;
+        background-color: $color-gray-light;
         border: 1px solid rgba(0, 0, 0, 0.04);
-        border-radius: 3px;
+        border-radius: $default-radius;
     }
 
     pre {
-        margin: 0.75em $page-padding * -1;
-        padding: 0 $page-padding;
-        font: 1em/1.25em monospace, monospace;
+        margin: 0 $page-padding * -1;
+        padding: 0.5em $page-padding;
+        font: 0.92em/1.25em $fonts-monospace;
         line-height: 1.25em;
-        background: #F3F3F3;
+        background: $color-gray-light;
 
         code {
             margin: 0;
@@ -163,16 +239,28 @@ body {
     }
 
     blockquote {
-        margin: 0.75em 0;
-        padding: 0 0.75em;
-        border-left: 0.25em solid $brown;
+        margin: $page-spacing 0;
+        padding: 0.25em $page-spacing;
+        border-left: 0.25em solid $color-gray;
+        background: $color-gray-light;
 
-        p {text-indent: 0}
+        p {
+            margin: 0;
+            text-indent: 0;
+        }
+
+        p ~ p {
+            margin-top: $page-spacing;
+        }
     }
 
     img {
-        margin: 0.75em auto;
+        margin: $page-spacing auto;
         max-width: 100%;
+    }
+
+    .footnotes {
+        //
     }
 }
 
@@ -183,32 +271,48 @@ body {
 
 
 // For mobile devices
-@media only screen and (max-width: 40em) {
-    body {font-size: 1em;}
+@media only screen and (max-width: 48em) {
+    body {
+        font-size: 1em;
+    }
 
     .content-wrap {
-        margin: 1em;
+        margin: 0;
+        padding: 0;
         width: auto;
-        max-width: $page-width;
+        max-width: 100%;
+        box-shadow: 0;
+        border: 0;
+        // max-width: $page-width;
     }
 
     .page-nav {
         display: table;
-        padding: 0 $page-padding/2;
+        padding: 0;
+        margin: 0;
     }
 
     .page {
-        padding: 0 $page-padding/2;
+        margin: 0;
+        padding: 0 $page-padding-mobile;
+        border-radius: 0;
+        border: 0;
+        box-shadow: 0;
+
         &:after {
-            margin-top: $page-padding/2;
-        }
-        &:before {
-            margin-bottom: $page-padding/2;
+            border: 1px solid rgba(0, 0, 0, 0);
+            margin-top: $page-padding-mobile;
         }
 
+        &:before {
+            border: 1px solid rgba(0, 0, 0, 0);
+            margin-bottom: $page-padding-mobile;
+        }
+
+        // Old version
         pre {
-            margin: 0.75em $page-padding/2 * -1;
-            padding: 0 $page-padding/2;
+            margin: 0 $page-padding-mobile * -1;
+            padding: 0.5em $page-padding-mobile;
         }
     }
 
